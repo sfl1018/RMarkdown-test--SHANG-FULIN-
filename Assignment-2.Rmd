@@ -1,0 +1,26 @@
+---
+title: "assignment-2"
+author: "SHANG FULIN"
+date: "2021/3/25"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+## R Markdown
+
+# This is the second assignment with 30data representing the number of students in different classes in different YEAR.
+**The column names represent the different year for year1 to year6**      
+*The row names are the different classes from Class1 to Class5*        
+
+```{r}
+m <- matrix(c(1:30),nrow=5,ncol=6)
+rnames <-c("Class1","Class2","Class3","Class4","Class5")
+cnames <-c("Year1","Year2","Year3","Year4","Year5","Year6")
+dimnames(m)<- list(rnames,cnames)
+m
+```
